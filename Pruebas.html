@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+	
+	<title>Ventana emergente con dos botones</title>
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 200px;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      padding: 20px;
+    }
+    
+    .popup button {
+      margin-right: 10px;
+    }
+  </style>
+  <script>
+    function mostrarVentana() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+    }
+  
+    function cerrarVentana() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+    }
+    
+    function accionBoton1() {
+      alert("Botón 1 pulsado");
+    }
+    
+    function accionBoton2() {
+      window.open("https://www.youtube.com/watch?v=fC9MPyN4jA4", "_blank");
+    }
+  </script>
+</head>
+<body>
+	<header>
+        <div class="container">
+            
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#somos">Quiene Somos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+          </header>
+  <h1>Ventana emergente con dos botones</h1>
+  <button onclick="mostrarVentana()">Abrir ventana</button>
+  
+  <div id="popup" class="popup">
+    <h2>Ventana emergente</h2>
+    <p>Contenido de la ventana emergente.</p>
+    <button onclick="accionBoton1()">Botón 1</button>
+    <button onclick="accionBoton2()">Botón 2</button>
+    <button onclick="cerrarVentana()">Cerrar</button>
+  </div>
+	<title>Botón que te lleva a YouTube</title>
+  <script>
+    function irAYoutube() {
+      window.open("https://www.youtube.com/watch?v=fC9MPyN4jA4", "_blank");
+    }
+  </script>
+</head>
+<body>
+  <h1>Botón que te lleva a YouTube</h1>
+  
+  <button onclick="irAYoutube()">Ir a YouTube</button>
+	
+	  <title>Información de la Empresa</title>
+  <style>
+    /* Estilos CSS para la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    
+    .section-title {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+    
+    .section-content {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nombre de la Empresa</h1>
+  </header>
+  
+  <div class="container">
+    <h2 class="section-title">Acerca de Nosotros</h2>
+    <div class="section-content">
+      <p>Información sobre la empresa y su historia.</p>
+    </div>
+    
+    <h2 class="section-title">Nuestros Valores</h2>
+    <div class="section-content">
+      <p>Descripción de los valores y principios de la empresa.</p>
+    </div>
+    
+    <h2 class="section-title">Equipo</h2>
+    <div class="section-content">
+      <p>Presentación del equipo de la empresa y sus roles.</p>
+    </div>
+  </div>
+	
+	
+	<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Productos</title>
+  <style>
+    .producto {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .producto img {
+      width:300 px;
+      height: 300px;
+      margin-right: 50px;
+    }
+    .producto h3 {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Productos</h1>
+
+  <div class="producto">
+   <img src="Imagenes/baileys.jpg" width="550" height="550" alt=""/>
+<h3>Producto 1</h3>
+    <p>Descripción del producto 1.</p>
+</div>
+
+  <div class="producto">
+    <img src="imagen2.jpg" alt="Producto 2">
+    <h3>Producto 2</h3>
+    <p>Descripción del producto 2.</p>
+  </div>
+
+  <div class="producto">
+    <img src="imagen3.jpg" alt="Producto 3">
+    <h3>Producto 3</h3>
+    <p>Descripción del producto 3.</p>
+  </div>
+</body>
+</html>
+<style>
+  .popup {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+<div class="popup" id="popup">
+  <h2>Bienvenido a nuestra licorería en línea</h2>
+  <p>¡Descubre nuestra amplia selección de licores!</p>
+  <button onclick="cerrarPopup()">Cerrar</button>
+</div>
+<script>
+  function cerrarPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+  
+  window.onload = function() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+  };
+</script>
+
+</body>
+</html>
